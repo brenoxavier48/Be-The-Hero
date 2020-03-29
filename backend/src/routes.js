@@ -9,7 +9,7 @@ const sessionController = require('./controllers/sessionController.js');
 routes.get('/ongs', ongController.index);
 routes.post('/ongs', ongController.insert);
 
-routes.get('/session', sessionController.validateOngSession);
+routes.post('/session', sessionController.validateOngSession);
 
 routes.get('/profile', profileController.indexIncidentsByOng);
 
